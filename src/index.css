@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes strokeColorChange {
+    0% {
+      -webkit-text-stroke-color: black;
+    }
+    50% {
+      -webkit-text-stroke-color: red;
+    }
+    100% {
+      -webkit-text-stroke-color: black;
+    }
+  }
+  
+  /* Apply styles to the animated text */
+  .animated-text {
+    color: transparent;
+    -webkit-text-stroke: .9px black;
+    animation: strokeColorChange 5s infinite;
+    transition: transform 1s ease;
+    cursor: pointer;
+  }
+
+
+  .bgimg {
+    background-image: 
+      url("../src/assets/treebg.png"), 
+      url("../src/assets/carbg.png");
+    background-size: 1000px, 950px; 
+    background-repeat: no-repeat; 
+    background-position: center -30px, center 100px; 
+    z-index: 1;
+    background-blend-mode: overlay;
+
+  }
+  .navHover:hover{
+    transition: all 0.5s;
+    color: #CA0000;
+  }
+
+  @media (max-width: 768px) {
+    .Testimonials-container {
+      padding: 10px; /* Adjust padding for mobile */
+      height: auto; /* Set height to auto to avoid overflow */
+    }
+    
+    .card1 {
+      width: 100%; /* Set card width to 100% */
+      height: auto; /* Set height to auto */
+      padding: 16px; /* Add padding for better spacing */
+    }
+    
+    .text-center h2 {
+      font-size: 2rem; /* Adjust heading size for mobile */
+    }
+  }
+  

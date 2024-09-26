@@ -1,0 +1,18 @@
+/* .heros {
+  background-image: url("./assets/treebg.png"), url("./assets/carbg.png"); 
+  background-position:  right bottom;
+  background-size: cover, contain; 
+  width: 1365px; 
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+.text-section {
+  position: relative;
+  z-index: 1; 
+} */
+.card-button:hover{
+  transition: all 0.5s;
+  background-color: #CA0000;
+  color: white;
+}
